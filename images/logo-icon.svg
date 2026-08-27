@@ -1,0 +1,32 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg{fill:#0F1214;}
+      .tick{stroke:#4FD1C5; stroke-width:3; stroke-linecap:square;}
+      .corner{stroke:#4FD1C5; stroke-width:3; fill:none; stroke-linecap:square;}
+      .diamond{stroke:#FF6B35; stroke-width:3; fill:none;}
+      .dot{fill:#FF6B35;}
+      .letter{font-family:'Space Grotesk','IBM Plex Mono',Arial,sans-serif; font-weight:700; fill:#E4E8EA;}
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="256" height="256" rx="28"/>
+
+  <!-- corner brackets -->
+  <path class="corner" d="M 34 58 L 34 34 L 58 34"/>
+  <path class="corner" d="M 198 34 L 222 34 L 222 58"/>
+  <path class="corner" d="M 222 198 L 222 222 L 198 222"/>
+  <path class="corner" d="M 58 222 L 34 222 L 34 198"/>
+
+  <!-- crosshair ticks, edge midpoints -->
+  <line class="tick" x1="128" y1="20" x2="128" y2="38"/>
+  <line class="tick" x1="128" y1="218" x2="128" y2="236"/>
+  <line class="tick" x1="20" y1="128" x2="38" y2="128"/>
+  <line class="tick" x1="218" y1="128" x2="236" y2="128"/>
+
+  <!-- rotated diamond accent -->
+  <rect class="diamond" x="118" y="62" width="20" height="20" transform="rotate(45 128 72)"/>
+
+  <!-- monogram -->
+  <text x="128" y="172" text-anchor="middle" class="letter" font-size="76" letter-spacing="-1">MBW</text>
+</svg>

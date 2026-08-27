@@ -1,0 +1,36 @@
+<svg width="560" height="180" viewBox="0 0 560 180" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .bg{fill:#0F1214;}
+      .tick{stroke:#4FD1C5; stroke-width:2.5; stroke-linecap:square;}
+      .corner{stroke:#4FD1C5; stroke-width:2.5; fill:none; stroke-linecap:square;}
+      .diamond{stroke:#FF6B35; stroke-width:2.5; fill:none;}
+      .word{font-family:'Space Grotesk','IBM Plex Mono',Arial,sans-serif; font-weight:700; fill:#E4E8EA;}
+      .tag{font-family:'IBM Plex Mono',monospace; font-weight:400; fill:#8A9299; letter-spacing:3px;}
+      .rule{stroke:#2A2F33; stroke-width:1.5;}
+    </style>
+  </defs>
+
+  <rect class="bg" x="0" y="0" width="560" height="180"/>
+
+  <!-- icon badge, left -->
+  <g transform="translate(24,24)">
+    <rect x="0" y="0" width="132" height="132" rx="16" fill="none" stroke="#2A2F33" stroke-width="2"/>
+    <path class="corner" d="M 18 30 L 18 18 L 30 18"/>
+    <path class="corner" d="M 102 18 L 114 18 L 114 30"/>
+    <path class="corner" d="M 114 102 L 114 114 L 102 114"/>
+    <path class="corner" d="M 30 114 L 18 114 L 18 102"/>
+    <line class="tick" x1="66" y1="8" x2="66" y2="20"/>
+    <line class="tick" x1="66" y1="112" x2="66" y2="124"/>
+    <line class="tick" x1="8" y1="66" x2="20" y2="66"/>
+    <line class="tick" x1="112" y1="66" x2="124" y2="66"/>
+    <rect class="diamond" x="58" y="50" width="16" height="16" transform="rotate(45 66 58)"/>
+  </g>
+
+  <!-- vertical rule -->
+  <line class="rule" x1="188" y1="30" x2="188" y2="150"/>
+
+  <!-- wordmark -->
+  <text x="214" y="98" class="word" font-size="52" letter-spacing="-1">MBW</text>
+  <text x="215" y="126" class="tag" font-size="14">ROBOTICS &amp; AUTOMATION</text>
+</svg>
